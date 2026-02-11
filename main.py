@@ -75,5 +75,7 @@ if st.button("Get Recommendations"):
             st.error("Movie not found. Try another title.")
         else:
             st.subheader(f"Recommended movies for '{movie_name}'")
-            for movie in recommendations.index:
-                st.write("👉", movie)
+            for index, row in recommendations.iterrows():
+                st.markdown(f"**{index}**")
+                st.write(row['Summary'])
+                st.markdown("---")

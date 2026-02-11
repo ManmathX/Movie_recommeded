@@ -1,0 +1,12 @@
+# Virtual Environment
+myenv/
+venv/
+env/
+.env
+
+# Python compilation
+__pycache__/
+*.py[cod]
+
+# System files
+.DS_Store
